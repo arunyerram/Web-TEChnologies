@@ -1,0 +1,8 @@
+table,thead,tr,th{
+    color:red;
+    border:1px solid black;
+}
+
+tbody,tr,td{
+    color:bluw;
+}
