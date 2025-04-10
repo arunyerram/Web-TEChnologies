@@ -1,0 +1,101 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  /* Header */
+  header {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .scrolling-title {
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: scrollText 15s linear infinite;
+  }
+  
+  @keyframes scrollText {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  nav {
+    margin-top: 10px;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Main Sections */
+  .section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+  }
+  
+  #latest-posts article {
+    margin-bottom: 15px;
+  }
+  
+  .recipes ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+  
+  .recipes ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Form Styling */
+  form {
+    margin-top: 10px;
+  }
+  
+  form input, form button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #eaeaea;
+    text-align: center;
+    padding: 15px;
+    border-top: 2px dashed #ccc;
+    margin-top: 30px;
+  }
+  
+  /* Media Query for Responsive Recipes */
+  @media screen and (min-width: 768px) {
+    .recipes ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+  }
+  

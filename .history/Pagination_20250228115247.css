@@ -1,0 +1,8 @@
+.app{
+    text-align:center;
+    margin-left:100px;
+    margin-top: 20px;
+    display:flex;
+    justify-content:center;
+    margin:auto;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Food Blog</title>
+  <link rel="stylesheet" href="lab3.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="scrolling-title">Welcome to My Food Blog</div>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#latest-posts">Latest Posts</a>
+      <a href="#popular-recipes">Popular Recipes</a>
+      <a href="#contact">Contact Me</a>
+      <a href="#subscribe">Subscribe</a>
+    </nav>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I’m a passionate foodie sharing tasty, healthy, and easy-to-make recipes. Join me in exploring the joy of cooking!</p>
+  </section>
+
+  <!-- Latest Posts Section -->
+  <section id="latest-posts" class="section">
+    <h2>Latest Posts</h2>
+    <article>
+      <h3>Healthy Salads for Every Day</h3>
+      <p>Fresh, quick, and nutritious — discover your next favorite salad!</p>
+      <a href="salad-recipes.html">Read more</a>
+    </article>
+    <article>
+      <h3>5-Minute Breakfast Ideas</h3>
+      <p>Speedy and satisfying breakfasts to kickstart your day!</p>
+      <a href="breakfast-ideas.html">Read more</a>
+    </article>
+  </section>
+
+  <!-- Popular Recipes Section -->
+  <section id="popular-recipes" class="section recipes">
+    <h2>Popular Recipes</h2>
+    <ul>
+      <li><a href="pasta.html">Creamy Garlic Pasta</a></li>
+      <li><a href="burger.html">Ultimate Veggie Burger</a></li>
+      <li><a href="dessert.html">Chocolate Lava Cake</a></li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:foodlover@example.com">foodlover@example.com</a></p>
+  </section>
+
+  <!-- Subscription Form -->
+  <section id="subscribe" class="section">
+    <h2>Subscribe</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; <span id="year"></span> My Food Blog. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

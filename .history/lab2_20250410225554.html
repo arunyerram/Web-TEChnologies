@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Food Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header, nav, section, footer {
+      padding: 20px;
+    }
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #333;
+    }
+    form input, form button {
+      display: block;
+      margin-top: 10px;
+      padding: 8px;
+    }
+    footer {
+      background-color: #f2f2f2;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Welcome to My Food Blog</h1>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#latest-posts">Latest Posts</a>
+      <a href="#popular-recipes">Popular Recipes</a>
+      <a href="#contact">Contact Me</a>
+      <a href="#subscribe">Subscribe</a>
+    </nav>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm a food enthusiast who loves experimenting with new flavors and sharing recipes that bring people together. Cooking is not just a passion but a way of life!</p>
+  </section>
+
+  <!-- Latest Posts Section -->
+  <section id="latest-posts">
+    <h2>Latest Posts</h2>
+
+    <article>
+      <h3>Healthy Salads for Every Day</h3>
+      <p>Discover a variety of colorful and nutritious salads perfect for daily meals.</p>
+      <a href="salad-recipes.html">Read more</a>
+    </article>
+
+    <article>
+      <h3>5-Minute Breakfast Ideas</h3>
+      <p>Short on time? These quick and healthy breakfast options are your new go-to.</p>
+      <a href="breakfast-ideas.html">Read more</a>
+    </article>
+  </section>
+
+  <!-- Popular Recipes Section -->
+  <section id="popular-recipes">
+    <h2>Popular Recipes</h2>
+    <ul>
+      <li><a href="pasta.html">Creamy Garlic Pasta</a></li>
+      <li><a href="burger.html">Ultimate Veggie Burger</a></li>
+      <li><a href="dessert.html">Chocolate Lava Cake</a></li>
+    </ul>
+  </section>
+
+  <!-- Contact and Subscription Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out: <a href="mailto:foodlover@example.com">foodlover@example.com</a></p>
+  </section>
+
+  <section id="subscribe">
+    <h2>Subscribe to My Blog</h2>
+    <form onsubmit="return validateForm()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; <span id="year"></span> My Food Blog. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Form validation (HTML handles required, this is extra if needed)
+    function validateForm() {
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+
+      if (!name || !email) {
+        alert("Please fill out both name and email.");
+        return false;
+      }
+      return true;
+    }
+  </script>
+
+</body>
+</html>
